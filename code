@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        // put your code here
+        Scanner scanner = new Scanner (System.in);
+        int personas = scanner.nextInt();
+        
+        int conteo2 = 0;
+        int conteo3 = 0;
+        int conteo4 = 0;
+        int conteo5 = 0;
+        
+        for (int f = 0; f != personas; f++){
+            int calificacion = scanner.nextInt();
+            
+            if (calificacion == 2){         
+        conteo2++;        
+            }
+            else if (calificacion == 3){         
+        conteo3++;        
+            }
+            else  if (calificacion == 4){         
+        conteo4++;        
+            }
+               else if (calificacion == 5){         
+        conteo5++;        
+            }
+            
+        }
+    System.out.print (conteo2 + " " + conteo3 + " " + conteo4 + " " + conteo5);
+    }
+    
+}
